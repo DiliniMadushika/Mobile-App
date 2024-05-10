@@ -1,9 +1,19 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.TodoApp" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Base.Theme.TodoApp" parent="Theme.Material3.Light.NoActionBar">
         <!-- Customize your light theme here. -->
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="fontFamily">@row/fontdiner_swanky_regular</item>
+        <item name="android:statusBarColor">@color/black</item>
     </style>
 
     <style name="Theme.TodoApp" parent="Base.Theme.TodoApp" />
+    <style name="CardViewStyle" parent="Widget.Material3.CardView.Outlined">
+        <item name="shapeAppearanceOverlay">@style/CutShape</item>
+    </style>
+    <style name="CutShape" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">12dp</item>
+    </style>
 </resources>
